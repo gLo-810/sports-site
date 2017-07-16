@@ -1,0 +1,16 @@
+body {
+background: #919499;
+}
+
+h1 {
+  text-align: center;
+}
+
+.col-sm-2 {
+  margin-top: 20px;
+
+}
+
+img {
+    border-radius: 10px;
+}
