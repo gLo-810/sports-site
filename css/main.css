@@ -6,14 +6,28 @@ h1 {
   text-align: center;
 }
 
-.col-sm-2 {
-  margin-top: 20px;
-
+.col-sm-1 {
+  margin-top: 10px;
+  padding-bottom: 5px;
 }
-
+p{
+  padding: 0px;
+  margin: 0px;
+}
 img {
     border-radius: 10px;
     height: 79px;
     width: 76px;
-
 }
+
+#textarea {
+  float: left;
+}
+
+.buttonGroup {
+  float: left;
+}
+
+/*textarea {
+  float:right;
+}*/
