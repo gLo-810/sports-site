@@ -19,7 +19,7 @@ for (var i = 1; i <= 30; i++) {
   var newImg = document.createElement("img");
   var userName = document.createElement("p");
 
-  newDiv.className = "col-sm-1"
+  newDiv.className = "col-sm-3 col-md-3 col-lg-2"
   newDiv.appendChild(newImg);
   newDiv.appendChild(userName);
   userName.textContent =  names[Math.random() * i | 0];
