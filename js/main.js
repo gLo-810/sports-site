@@ -3,6 +3,8 @@ var reset = document.getElementById("reset");
 var tDisplay = document.getElementById("parent");
 var bGroup = document.getElementById("buttonGroup");
 var dBtn = document.getElementById("display");
+var reset = document.getElementById("reset");
+var random = document.getElementById("random");
 var rBaseball = document.getElementById('baseball');
 var rFootball = document.getElementById('football');
 var names = [];
@@ -54,29 +56,17 @@ function newEls() {
 }
 
 // display images before random
-dBtn.addEventListener("click", function images() {
+dBtn.addEventListener("click", function display() {
     newEls();
 });
 
+//random the displayed content
+random.addEventListener("click", function redraw() {
+    shuffle(names);
+    shuffle(numbers);
+    newEls();
+});
 
-
-
-// // button behavoir
-//  bGroup.addEventListener("click", function images(e) {
-//
-//       if (e.target.id === "baseball") {
-//         newImg.src = "images/baseball/team" + i + ".jpg";
-//       } else if (e.target.id === "football") {
-//         newImg.src = "images/football/team" + i + ".gif";
-//       }
-//        tDisplay.appendChild(newDiv);
-//     });
-//   } else {
-//     for (var i = 1; i <= tDisplay.children.length; i++) {
-//       var tdLength = tDisplay.children.length;
-//       tDisplay.appendChild(tDisplay.children[Math.random() * tdLength | 0]);
-//       tDisplay.getElementsByTagName("p")[Math.random() * tdLength | 0].textContent = names[Math.random() * tdLength | 0];
-//
-//     }
-//   }
-// });
+reset.addEventListener("click", function reset() {
+    document.getElementById("parent").innerHTML = "";
+});
